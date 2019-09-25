@@ -10,9 +10,11 @@ class Registration
 public:
         Registration();
         bool register_user();
+        void set_name();
+
         int registration_id;
         string name;
-        string description;
+        string role;
         string date;
         string national_ID;
 };
