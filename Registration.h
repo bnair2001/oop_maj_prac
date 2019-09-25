@@ -8,10 +8,10 @@ using namespace std;
 class Registration
 {
 public:
-        Registration();
+        Registration(string aname);
         bool register_user();
         void set_name();
-
+        void set_role();
         int registration_id;
         string name;
         string role;
