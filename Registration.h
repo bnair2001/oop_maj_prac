@@ -9,7 +9,8 @@ class Registration
 {
 public:
         Registration(string aname);
-        bool register_user();
+        bool register_user(string id, string rol);
+        string return_deets();
         void set_name();
         void set_role();
         int registration_id;
@@ -19,4 +20,4 @@ public:
         string national_ID;
 };
 
-#endif 
+#endif
