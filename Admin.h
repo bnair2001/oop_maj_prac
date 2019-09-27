@@ -9,6 +9,7 @@ using namespace std;
 class Admin
 {
 public:
+        Admin();
         bool student_registration_approval();
         bool staff_registration_approval();
         bool course_addition_approval();
