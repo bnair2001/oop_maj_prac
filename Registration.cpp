@@ -6,6 +6,7 @@
 
 using namespace std;
 string convertToString(char[],int);
+string currentDateTime();
 
 Registration::Registration(string aname)
 {
@@ -34,6 +35,13 @@ bool Registration::register_user()
         go = true;
     }
     return go;
+}
+
+string Registration::return_deets()
+{
+    string details;
+    details = "Name:" + name + "\n" + "Role: " + role + "\n" + "Date: " + currentDateTime() + "\n" + " NNational ID: " + national_ID;
+    return details;
 }
 
 string currentDateTime() {
