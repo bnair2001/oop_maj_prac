@@ -33,6 +33,7 @@ bool Registration::register_user()
     if((role != "student_description")&&(national_ID != "abcd1234"))
     {
         go = true;
+        date = currentDateTime();
     }
     return go;
 }
@@ -40,7 +41,7 @@ bool Registration::register_user()
 string Registration::return_deets()
 {
     string details;
-    details = "Name:" + name + "\n" + "Role: " + role + "\n" + "Date: " + currentDateTime() + "\n" + " NNational ID: " + national_ID;
+    details = "Name:" + name + "\n" + "Role: " + role + "\n" + "Date: " + date+ "\n" + " NNational ID: " + national_ID;
     return details;
 }
 
