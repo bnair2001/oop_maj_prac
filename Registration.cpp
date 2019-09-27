@@ -1,7 +1,11 @@
 #include <iostream>
+#include <string>
+#include <stdio.h>
+#include <time.h>
 #include "Registration.h"
 
 using namespace std;
+string convertToString(char[],int);
 
 Registration::Registration(string aname)
 {
@@ -12,14 +16,43 @@ Registration::Registration(string aname)
     national_ID = "abcd12345";
 }
 
+void Registration::set_role(string rol)
+{
+    role = rol;
+}
 
+void Registration::set_NID(string id)
+{
+    national_ID = id;
+}
 
-bool Registration::register_user(string id, string rol)
+bool Registration::register_user()
 {
     bool go = false;
-    if((rol != "student_description")&&(id != "abcd1234"))
+    if((role != "student_description")&&(national_ID != "abcd1234"))
     {
         go = true;
     }
     return go;
+}
+
+string currentDateTime() {
+    time_t     now = time(0);
+    struct tm  tstruct;
+    char       buf[80];
+    tstruct = *localtime(&now);
+    strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
+    int a_size = sizeof(buf) / sizeof(char);
+    string ab = convertToString(buf,a_size);
+    return ab;
+}
+
+string convertToString(char* a, int size) 
+{ 
+    int i; 
+    string s = ""; 
+    for (i = 0; i < size; i++) { 
+        s = s + a[i]; 
+    } 
+    return s; 
 }

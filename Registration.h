@@ -9,10 +9,10 @@ class Registration
 {
 public:
         Registration(string aname);
-        bool register_user(string id, string rol);
+        bool register_user();
         string return_deets();
-        void set_name();
-        void set_role();
+        void set_NID(string id);
+        void set_role(string rol);
         int registration_id;
         string name;
         string role;
