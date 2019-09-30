@@ -5,5 +5,5 @@ using namespace std;
 
 Faculty::Faculty()
 {
-    
+
 }
