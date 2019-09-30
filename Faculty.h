@@ -9,7 +9,7 @@ class Faculty
 {
 public:
         Faculty();
-        
+        string name;
 };
 
 #endif
