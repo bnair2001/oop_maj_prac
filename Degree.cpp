@@ -6,7 +6,7 @@ using namespace std;
 Degree::Degree()              // a default constructor
 {
 	degnum = 0;
-	names = "Bachelor of Science in Computer science";
+	names = "default_value";
 }
 
 Degree::Degree(int dNumber, string dName)    // a constructor that takes the degree number and degree name
