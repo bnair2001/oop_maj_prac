@@ -13,7 +13,7 @@ public:
 		string facultyname;
 
 	// returns the number of Degrees who have joined the Faculty
-	int get_current_number_of_players(); 
+	int get_current_number_of_Degrees();
 		int degnum;
 
 

@@ -3,9 +3,9 @@ using namespace std;
 #include <string>
 #include "Degree.h"
 
-Degree::Degree()              // a default constructor 
+Degree::Degree()              // a default constructor
 {
-	dnum = 0;
+	degnum = 0;
 	names = "Bachelor of Science in Computer science";
 }
 

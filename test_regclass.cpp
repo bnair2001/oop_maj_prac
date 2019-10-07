@@ -1,8 +1,9 @@
 #include <iostream>
 #include "Registration.h"
+#include "Faculty.h"
+#include "Degree.h"
 #include <string>
 using namespace std;
-
 int main()
 {
     cout <<"Registration"<<endl;
