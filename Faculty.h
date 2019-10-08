@@ -1,32 +1,23 @@
 #ifndef FACULTY_H
 #define FACULTY_H
+
+#include<iostream>
+#include<string>
+#include<vector>
 using namespace std;
-#include <string>
-#include "Degree.h"
 
-class Faculty : public Degree
+class Faculty
 {
-public:
-	Faculty();                            // default constructor
-	Faculty(int max_size, string name);  // constructor with given Faculty size and Faculty name
-		int facultysize;
-		string facultyname;
+    private:
+        string faculty_name;
+        //int max_student_faculty;
 
-	// returns the number of Degrees who have joined the Faculty
-	int get_current_number_of_Degrees();
-		int degnum;
-
-
-	string get_name();                // returns the Faculty's name
+    public:
+        Faculty();
+        Faculty(string faculty_name);
+        string get_fac_name();
 
 
-	Degree * get_roster();        // returns the array of Degrees currently on the Faculty
-		Degree roster[200];
-
-	// returns true and adds new Degree to the Faculty if the Faculty is not full
-	// otherwise returns false
-	bool add_degree(Degree new_degree);
-
-	~Faculty();
 };
+
 #endif
