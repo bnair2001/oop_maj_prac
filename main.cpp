@@ -5,5 +5,8 @@ using namespace std;
 int main()
 {
     cout<<"University enrolment system version 1.0"<<endl;
+    cout<<"Welcome, follow the number based entry below !"<<endl;
+    cout<<"1. New Student Registration"<<endl;
+    cout<<"2. "<<endl;
     return 0;
 }
