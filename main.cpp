@@ -1,6 +1,6 @@
 #include <iostream>
 //#include "conio.h"
-#include <vector>
+//#include <vector>
 using namespace std;
 
 void first_input();
@@ -8,19 +8,52 @@ void first_input();
 
 int main()
 {
-	cout << "Welcome to The Registration System\n" << endl;
+
 	int input_number;
+	cout << "Welcome to The Registration System\n" << endl;
 	first_input();
-	cin >> input_number;
-	do
+
+	while(true)
 	{
-		system("clear");
-		cout<<"Enter a valid number"<<endl;
-		first_input();
+		
 		cin >> input_number;
+
+		if (input_number == 1)
+		{
+
+			cout << "reach 1" << endl;
+			break;
+		}
+		else if (input_number == 2)
+		{
+			cout << "reach 2" << endl;
+			break;
+		}
+		else if (input_number == 3)
+		{
+
+			break;
+		}
+		else if (input_number == 4)
+		{
+
+			break;
+		}
+		else if (input_number == 5)
+		{
+
+			break;
+		}
+		else
+		{
+			first_input();
+			continue;
+		}
 	}
-	while (0 < input_number || input_number <= 5);
-}
+
+
+}	
+
 void first_input()
 {
 	cout << "Please Select One of The Following" << endl;
