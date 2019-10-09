@@ -1,12 +1,40 @@
 #include <iostream>
+//#include "conio.h"
+#include <vector>
 using namespace std;
-#include "Faculty.h"
-#include "Degree.h"
+
+void first_input();
+
+
 int main()
 {
-    cout<<"University enrolment system version 1.0"<<endl;
-    cout<<"Welcome, follow the number based entry below !"<<endl;
-    cout<<"1. New Student Registration"<<endl;
-    cout<<"2. "<<endl;
-    return 0;
+
+	int input_number;
+	first_input();
+	cin >> input_number;
+
+	if (0 < input_number && input_number < 5)
+	{
+		while (0 > input_number && input_number > 5)
+	{
+		first_input();
+		cin >> input_number;
+
+	}
+	}
+
+	
+
+}	
+
+void first_input()
+{
+	cout << "Welcome to The Registration System\n" << endl;
+	cout << "Please Select One of The Following" << endl;
+	cout << "1. Undergraduate Registration" << endl;
+	cout << "2. Postgraduate registration" << endl;
+	cout << "3. Staff registration" << endl;
+	cout << "4. Admin login" << endl;
+	cout << "5. Quit" << endl;
 }
+
