@@ -22,6 +22,11 @@ void Registration::set_role(string rol)
     role = rol;
 }
 
+void Registration::set_gpa(double gpa)
+{
+    marks = gpa;
+}
+
 void Registration::set_NID(string id)
 {
     national_ID = id;
@@ -41,7 +46,7 @@ bool Registration::register_user()
 string Registration::return_deets()
 {
     string details;
-    details = "Name:" + name + "\n" + "Role: " + role + "\n" + "Date: " + date+ "\n" + " NNational ID: " + national_ID;
+    details = "Name:" + name + "\n" + "Role: " + role + "\n" + "Date: " + date+ "\n" + "National ID: " + national_ID;
     return details;
 }
 
@@ -51,6 +56,10 @@ string currentDateTime() {
     char       buf[80];
     tstruct = *localtime(&now);
     strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
+    for(int i=11;i<80;i++)
+    {
+        buf[i] = 0;
+    }
     int a_size = sizeof(buf) / sizeof(char);
     string ab = convertToString(buf,a_size);
     return ab;
