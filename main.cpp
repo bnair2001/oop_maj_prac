@@ -8,28 +8,21 @@ void first_input();
 
 int main()
 {
-
+	cout << "Welcome to The Registration System\n" << endl;
 	int input_number;
 	first_input();
 	cin >> input_number;
-
-	if (0 < input_number && input_number < 5)
+	do
 	{
-		while (0 > input_number && input_number > 5)
-	{
+		system("clear");
+		cout<<"Enter a valid number"<<endl;
 		first_input();
 		cin >> input_number;
-
 	}
-	}
-
-	
-
-}	
-
+	while (0 < input_number || input_number <= 5);
+}
 void first_input()
 {
-	cout << "Welcome to The Registration System\n" << endl;
 	cout << "Please Select One of The Following" << endl;
 	cout << "1. Undergraduate Registration" << endl;
 	cout << "2. Postgraduate registration" << endl;
