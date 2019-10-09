@@ -13,6 +13,6 @@ student:
 faculty:
 	g++ test_faculty.cpp Degree.cpp Faculty.cpp -o out
 	./out
-	
+
 clean:
 	rm -rf out

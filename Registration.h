@@ -14,12 +14,15 @@ public:
         void set_NID(string id);
         void set_role(string rol);
         void set_gpa(double gpa);
+        void set_qual(string qualify);
         int registration_id;
         string name;
         string role;
         string date;
         string national_ID;
         double marks;
+        double GPA;
+        string qualification;
 };
 
 #endif

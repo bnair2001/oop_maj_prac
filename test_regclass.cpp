@@ -3,6 +3,7 @@
 #include "Faculty.h"
 #include "Degree.h"
 #include <string>
+#include "conio.h"
 using namespace std;
 int main()
 {
@@ -19,6 +20,7 @@ int main()
     string id;
     cin>>id;
     one.set_NID(id);
+    system("clear");
     cout<<"Processing registration..."<<endl;
     if(one.register_user())
     {

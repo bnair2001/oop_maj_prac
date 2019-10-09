@@ -15,6 +15,8 @@ Registration::Registration(string aname)
     role = "student_description" ;
     date = "1st of the first month of 2020";
     national_ID = "abcd12345";
+    qualification = "none";
+    GPA = 0.0;
 }
 
 void Registration::set_role(string rol)
@@ -24,9 +26,13 @@ void Registration::set_role(string rol)
 
 void Registration::set_gpa(double gpa)
 {
-    marks = gpa;
+    GPA = gpa;
 }
 
+void Registration::set_qual(string qualify)
+{
+    qualification = qualify;
+}
 void Registration::set_NID(string id)
 {
     national_ID = id;
