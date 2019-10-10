@@ -4,7 +4,18 @@
 using namespace std;
 
 void first_input();
-
+void faculty_input();
+void BA_input();
+void Beng_input();
+void BHMS_input();
+void BB_input();
+void BS_input();
+void faculty_input();
+void MA_input();
+void Meng_input();
+void MHMS_input();
+void MB_input();
+void MS_input();
 
 int main()
 {
@@ -15,7 +26,6 @@ int main()
 
 	while(true)
 	{
-		
 		cin >> input_number;
 
 		if (input_number == 1)
@@ -29,27 +39,27 @@ int main()
                 switch(input_number)
                 {
                     case 1:cout << "hey1" << endl;
-            			BA_input();
-           				cin >> input_number;
-           				while(input_number>0 || input_number<5)
-           				{
-           					switch(input_number)
-           					{
-           					case 1:cout << "thanks for choosing bachelor of music" << endl; break;
-           					case 2:cout << "thanks for choosing bachelor of history" << endl; break;
-           					case 3:cout << "thanks for choosing bachelor of media" << endl; break;
-           					case 4:cout << "thanks for choosing bachelor of philosophy" << endl; break;
-           					case 5:cout << "quit" << endl; break;
-           					default : break;
-           					}
-           				}
-                    	break;
+						BA_input();
+						cin >> input_number;
+						while(input_number>0 || input_number<5)
+						{
+							switch(input_number)
+							{
+							case 1:cout << "thanks for choosing bachelor of music" << endl; break;
+							case 2:cout << "thanks for choosing bachelor of history" << endl; break;
+							case 3:cout << "thanks for choosing bachelor of media" << endl; break;
+							case 4:cout << "thanks for choosing bachelor of philosophy" << endl; break;
+							case 5:cout << "quit" << endl; break;
+							default : break;
+							}
+						}
+						break;
 
                     case 2:cout << "hey2" << endl;
-            			Beng_input();
-           				cin >> input_number;
-           				while(input_number>0 || input_number<5)
-           				{
+					Beng_input();
+					cin >> input_number;
+					while(input_number>0 || input_number<5)
+						{
            					switch(input_number)
            					{
            					case 1:cout << "thanks for choosing bachelor of Petroleum" << endl; break;
@@ -166,52 +176,51 @@ int main()
             			MHMS_input();
            				cin >> input_number;
            				while(input_number>0 || input_number<5)
-           				{
-           					switch(input_number)
-           					{
-           					case 1:cout << "thanks for choosing master of Nursing" << endl; break;
-           					case 2:cout << "thanks for choosing master of Medicine" << endl; break;
-           					case 3:cout << "thanks for choosing master of Dental" << endl; break;
-           					case 4:cout << "thanks for choosing master of Psychology" << endl; break;
-           					case 5:cout << "quit" << endl; break;
-           					default : break;
-           					}
-           				}
-                    	break;
+						{
+							switch(input_number)
+							{
+							case 1:cout << "thanks for choosing master of Nursing" << endl; break;
+							case 2:cout << "thanks for choosing master of Medicine" << endl; break;
+							case 3:cout << "thanks for choosing master of Dental" << endl; break;
+							case 4:cout << "thanks for choosing master of Psychology" << endl; break;
+							case 5:cout << "quit" << endl; break;
+							default : break;
+							}
+						}
+						break;
 
-                  	case 4:cout << "hey4" << endl;
-            			MB_input();
-           				cin >> input_number;
-           				while(input_number>0 || input_number<5)
-           				{
-           					switch(input_number)
-           					{
-           					case 1:cout << "thanks for choosing master of Entrepreneurship" << endl; break;
-           					case 2:cout << "thanks for choosing master of International Trade" << endl; break;
-           					case 3:cout << "thanks for choosing master of Economics" << endl; break;
-           					case 4:cout << "thanks for choosing master of Law" << endl; break;
-           					case 5:cout << "quit" << endl; break;
-           					default : break;
-           					}
-           				}
-                    	break;
-  		
-                    case 5:cout << "hey5" << endl; 
-                    	MS_input();
-           				cin >> input_number;
-           				while(input_number>0 || input_number<5)
-           				{
-           					switch(input_number)
-           					{
-           					case 1:cout << "thanks for choosing master of Physics" << endl; break;
-           					case 2:cout << "thanks for choosing master of Biological Sciences" << endl; break;
-           					case 3:cout << "thanks for choosing master of Agriculture" << endl; break;
-           					case 4:cout << "thanks for choosing master of Veterinary Sciences" << endl; break;
-           					case 5:cout << "quit" << endl; break;
-           					default : break;
-           					}
-           				}
-                    	break;
+						case 4:cout << "hey4" << endl;
+						MB_input();
+						cin >> input_number;
+						while(input_number>0 || input_number<5)
+						{
+							switch(input_number)
+							{
+							case 1:cout << "thanks for choosing master of Entrepreneurship" << endl; break;
+							case 2:cout << "thanks for choosing master of International Trade" << endl; break;
+							case 3:cout << "thanks for choosing master of Economics" << endl; break;
+							case 4:cout << "thanks for choosing master of Law" << endl; break;
+							case 5:cout << "quit" << endl; break;
+							default : break;
+							}
+						}
+						break;
+                    case 5:cout << "hey5" << endl;
+					MS_input();
+						cin >> input_number;
+						while(input_number>0 || input_number<5)
+						{
+							switch(input_number)
+							{
+							case 1:cout << "thanks for choosing master of Physics" << endl; break;
+							case 2:cout << "thanks for choosing master of Biological Sciences" << endl; break;
+							case 3:cout << "thanks for choosing master of Agriculture" << endl; break;
+							case 4:cout << "thanks for choosing master of Veterinary Sciences" << endl; break;
+							case 5:cout << "quit" << endl; break;
+							default : break;
+							}
+						}
+						break;
 
                     default: cout << "hey6" << endl; break;
                 }
@@ -241,7 +250,7 @@ int main()
 	}
 
 
-}	
+}
 
 void first_input()
 {
