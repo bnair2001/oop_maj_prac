@@ -60,36 +60,36 @@ int main()
 					cin >> input_number;
 					while(input_number>0 || input_number<5)
 						{
-           					switch(input_number)
-           					{
-           					case 1:cout << "thanks for choosing bachelor of Petroleum" << endl; break;
-           					case 2:cout << "thanks for choosing bachelor of Chemical" << endl; break;
-           					case 3:cout << "thanks for choosing bachelor of Civil" << endl; break;
-           					case 4:cout << "thanks for choosing bachelor of Computer Science" << endl; break;
-           					case 5:cout << "quit" << endl; break;
-           					default : break;
-           					}
-           				}
-                    	break;
+							switch(input_number)
+							{
+							case 1:cout << "thanks for choosing bachelor of Petroleum" << endl; break;
+							case 2:cout << "thanks for choosing bachelor of Chemical" << endl; break;
+							case 3:cout << "thanks for choosing bachelor of Civil" << endl; break;
+							case 4:cout << "thanks for choosing bachelor of Computer Science" << endl; break;
+							case 5:cout << "quit" << endl; break;
+							default : break;
+							}
+						}
+						break;
 
                     case 3:cout << "hey3" << endl;
-            			BHMS_input();
-           				cin >> input_number;
-           				while(input_number>0 || input_number<5)
-           				{
-           					switch(input_number)
-           					{
-           					case 1:cout << "thanks for choosing bachelor of Nursing" << endl; break;
-           					case 2:cout << "thanks for choosing bachelor of Medicine" << endl; break;
-           					case 3:cout << "thanks for choosing bachelor of Dental" << endl; break;
-           					case 4:cout << "thanks for choosing bachelor of Psychology" << endl; break;
-           					case 5:cout << "quit" << endl; break;
-           					default : break;
-           					}
-           				}
-                    	break;
+					BHMS_input();
+						cin >> input_number;
+						while(input_number>0 || input_number<5)
+						{
+							switch(input_number)
+							{
+							case 1:cout << "thanks for choosing bachelor of Nursing" << endl; break;
+							case 2:cout << "thanks for choosing bachelor of Medicine" << endl; break;
+							case 3:cout << "thanks for choosing bachelor of Dental" << endl; break;
+							case 4:cout << "thanks for choosing bachelor of Psychology" << endl; break;
+							case 5:cout << "quit" << endl; break;
+							default : break;
+							}
+						}
+						break;
 
-                  	case 4:cout << "hey4" << endl;
+					case 4:cout << "hey4" << endl;
             			BB_input();
            				cin >> input_number;
            				while(input_number>0 || input_number<5)
@@ -239,7 +239,7 @@ int main()
 		}
 		else if (input_number == 5)
 		{
-
+			system("exit");
 			break;
 		}
 		else

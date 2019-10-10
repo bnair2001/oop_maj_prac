@@ -15,7 +15,6 @@ int main()
 
 	while(true)
 	{
-		
 		cin >> input_number;
 
 		if (input_number == 1)
@@ -52,7 +51,7 @@ int main()
 	}
 
 
-}	
+}
 
 void first_input()
 {
